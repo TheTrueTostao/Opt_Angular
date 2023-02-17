@@ -1,0 +1,11 @@
+<p>
+  <li
+    *ngFor="let todo of todos"
+    [ngClass]="{ 'line-over-text': todo.done }"
+    (click)="changeDone(todo)"
+  >
+    {{ todo.label }}
+  </li>
+</p>
+<input type="text" [(ngModel)]="label" />
+<button (click)="add()">Ajouter une tache</button>
