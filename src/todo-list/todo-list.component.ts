@@ -20,6 +20,9 @@ export class TodoListComponent implements OnInit {
   ];
   constructor() {}
 
+  /**
+   * Change l'etat de la tache (a faire/faire)
+   */
   changeDone(t: Todo) {
     t.done = !t.done;
   }
@@ -32,7 +35,9 @@ export class TodoListComponent implements OnInit {
     }
     return true;
   }
-
+  /**
+   * Ajoute une tache a la liste de tache
+   */
   add() {
     if (this.label.length != 0) {
       if (this.estDansListe() == true) {
