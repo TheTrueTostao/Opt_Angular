@@ -10,9 +10,6 @@ import { TodoListComponent } from './todo-list/todo-list.component';
   imports: [CommonModule, TodoListComponent],
   template: `
     <h1>ToDoList</h1>
-    <a target="_blank" href="https://docs.google.com/presentation/d/1hpMyLwcBLOo356sEBjZzusp7WS_GaBo3TToCCnGq8LU/edit#slide=id.g6e0bc7b0bd_0_19">
-      Cours  
-    </a>
     <tdlst></tdlst>
   `,
 })
