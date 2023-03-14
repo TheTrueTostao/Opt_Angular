@@ -1,12 +1,13 @@
 <p>
-  <li
+  <!--   <li
     *ngFor="let todo of todos"
     [ngClass]="{ 'line-over-text': todo.done }"
     (click)="changeDone(todo)"
   >
     {{ todo.label }}
-  </li>
+  </li> -->
   <todo-item *ngFor="let todo of todos" [todo]="todo"></todo-item>
 </p>
-<input type="text" [(ngModel)]="label" />
+<!-- <input type="text" [(ngModel)]="label" />
 <button (click)="add()">Ajouter une tache</button>
+ -->

@@ -9,7 +9,15 @@
           <span *ngIf="todo.done == true; else elseBlock">Effectué</span>
           <ng-template #elseBlock>Non Effectué</ng-template>
         </a>
-        <i class="tiny material-icons">brush</i>
+        <i
+          class="tiny material-icons"
+          (click)="changeModifier()"
+          *ngIf="modification == false; else elseBlc"
+          >brush</i
+        >
+        <ng-template #elseBlc
+          ><input type="text" [(ngModel)]="todo.label"
+        /></ng-template>
       </div>
     </div>
   </div>
