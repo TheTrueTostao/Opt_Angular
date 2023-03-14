@@ -6,7 +6,7 @@
   >
     {{ todo.label }}
   </li>
-  <!-- <todo-item *ngFor="let todo of todos"></todo-item> -->
+  <todo-item *ngFor="let todo of todos" [todo]="todo"></todo-item>
 </p>
 <input type="text" [(ngModel)]="label" />
 <button (click)="add()">Ajouter une tache</button>

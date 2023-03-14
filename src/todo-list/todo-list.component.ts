@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Todo } from '../model/todo';
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
 @Component({
   selector: 'tdlst',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css'],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TodoItemComponent],
   standalone: true,
 })
 export class TodoListComponent implements OnInit {
