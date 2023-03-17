@@ -7,6 +7,8 @@
     {{ todo.label }}
   </li> -->
   <todo-item *ngFor="let todo of todos" [todo]="todo"></todo-item>
+
+  <a onclick="M.toast({html: 'ToDo mis a jour'})" class="btn"></a>
 </p>
 <!-- <input type="text" [(ngModel)]="label" />
 <button (click)="add()">Ajouter une tache</button>
